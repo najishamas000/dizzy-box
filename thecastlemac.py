@@ -232,9 +232,6 @@ def second_prompt_n():
 def show_yes_no():
 	if _n1index == 1 and _n2index == 3 and _v2index == 5 and _v1index == 7:
 		app.info("YOU HAVE ESCAPED", "Prime numbers worked in your favor and you have escaped.")
-	#else:
-		#ex_string = "You have not earned the right to escape."
-		#app.warn("YOU LOSE", ex_string)
 	load_waf.hide()
 	horse_box.hide()
 	p0_btn.hide()
@@ -247,7 +244,6 @@ def show_yes_no():
 	load_waf.repeat(5, random_waf)
 
 def zeroth_prompt():
-	#app.warn(" THING BEFORE YOU END UP LIKE ME - I WENT TO ANGEL JAIL FOR 600 YEARS FOR HITTING MY BROTHER ON THE HEAD AND IT WAS NOTHING COMPARED TO THIS. MAYBE I CAN SHOW YOU HOW TO TOUCH A CAN OF BEANS LATER.  DO YOU WANNA BE MY FRIEND? LOVE, RAW MAN")
 	intro_gif.hide()
 	#right_box.hide()
 	top_box.hide()
@@ -336,7 +332,7 @@ empty2.append(_n3_fork[no3_f])
 empty2.append("?")
 p3_f_string = ''.join(empty2)	
 vl1 = [" remove", " feel", " impose", " respect", " secrete"]
-nlist = [" violence", " your face", " your mother", " filth", " a precedent", " your father"]
+nlist = [" melancholy", " your face", " your home", " filth", " a precedent", " your car"]
 nlist2 = [" your dreams", " your self", " your thoughts", " a toilet", " your conscious life", " the world"]
 prep = [" in", " outside of"]
 p1_hold = []
@@ -352,8 +348,8 @@ p1_hold.append(nlist2[k])
 #p1_hold.append("? NEEDS GIF")
 p1_display = ''.join(p1_hold)
 promptholder = []
-nouns2 = [" an erection", " a bowel movement.", " a series of closeups.", " images of dissimilarities", " a vantage point.", " a thermal image.", " an inverted crop.", " a duplication."]
-nouns1 = [" genitalia", " circular forms", " asymmetries", " entrails", " limbs", " eyes",  " animals", " sources of light"]
+nouns2 = [" an wall", " a cave", " a series of closeups.", " images of dissimilarities", " a vantage point.", " a thermal image.", " an inverted crop.", " a duplication."]
+nouns1 = [" miasma", " circular forms", " asymmetries", " entrails", " limbs", " eyes",  " animals", " sources of light"]
 verblst2 = ["produce", "create", "describe", "conjure", "compose"]
 verblst1 = ["Indicate", "Remove", "Augment", "Highlight", "Pair up", "Transform", "Enlarge", "Eliminate"]
 _n1index = random.randint(0,7)
@@ -372,7 +368,7 @@ noun0 = [" series", " sequence", " tryptich"]
 adj1 = [" strange", " globular", " gelatinous", " sessile", " patronymic", " harmonious", " seven-fold", " chimeric"]
 nounz1 = [" connections", " lines", " conclusions", " invertebrates", " fins", " abstractions", " abominations", " serpents"]
 prps2 = [" in", " harboring", " surrounding", " residing in", " depriving a village of", " creating a conflict within", " shifting tides of", " complacent in"]
-nounz2 = [" war", " libido", " time", " a home", " a vision of hell", " a concavity", " a toroid highway"]
+nounz2 = [" war", " libidinal force", " time", " a home", " a vision of hell", " a concavity", " a toroid highway"]
 blank = []
 _v1 = random.randint(0,2)
 _n0 = random.randint(0,2)
