@@ -438,36 +438,36 @@ app = App(layout = "grid", bg = "black")
 app.tk.attributes("-fullscreen", True)
 #pictures shown variably
 global_prompt_string = Text(app, font="Comic Sans", grid = [2,0], color="white", size=18)
-follow_mat = Picture(app, image="/Users/iclateman/The Castle/title page/followmatte2.gif", grid = [1,2], width = 900, height = 150)
-intro_gif = Picture(app, image="/Users/iclateman/The Castle/title page/continue.gif", grid = [1,3], width = 900, height = 115)
-enter_button = PushButton(app, image="/Users/iclateman/The Castle/title page/enterbutton.png", grid = [1,4], width = 220, height = 50, command=zeroth_prompt) 
-yes_btn = PushButton(app, image="/Users/iclateman/The Castle/title page/yes1.png", width = 100, height = 70, grid = [0,0], command=second_prompt_y)
+follow_mat = Picture(app, image="titlepage/followmatte2.gif", grid = [1,2], width = 900, height = 150)
+intro_gif = Picture(app, image="titlepage/continue.gif", grid = [1,3], width = 900, height = 115)
+enter_button = PushButton(app, image="titlepage/enterbutton.png", grid = [1,4], width = 220, height = 50, command=zeroth_prompt) 
+yes_btn = PushButton(app, image="titlepage/yes1.png", width = 100, height = 70, grid = [0,0], command=second_prompt_y)
 yes_btn.hide()
 gif_select_i1 = Picture(app, grid=[0,1], width = 300, height = 500)
 sel_i1 = random.randint(0,4)
 if sel_i1 == 0:
-	gif_select_i1.image = "/Users/iclateman/The Castle/iprompt1gifs/acorn1.gif"
+	gif_select_i1.image = "iprompt1gifs/acorn1.gif"
 elif sel_i1 == 1:
-	gif_select_i1.image = "/Users/iclateman/The Castle/iprompt1gifs/acorndix.gif"
+	gif_select_i1.image = "iprompt1gifs/acorndix.gif"
 elif sel_i1 == 2:
-	gif_select_i1.image = "/Users/iclateman/The Castle/iprompt1gifs/blobbin.gif"
+	gif_select_i1.image = "iprompt1gifs/blobbin.gif"
 elif sel_i1 == 3:
-	gif_select_i1.image = "/Users/iclateman/The Castle/iprompt1gifs/humannude.gif"
+	gif_select_i1.image = "iprompt1gifs/humannude.gif"
 else:
-	gif_select_i1.image = "/Users/iclateman/The Castle/iprompt1gifs/prewormm.gif"
+	gif_select_i1.image = "iprompt1gifs/prewormm.gif"
 gif_select_i1.hide()
 gif_select_i2 = Picture(app, grid = [0,3], width = 300, height = 400)
 sel_i2 = random.randint(0,4)
 if sel_i2 == 0:
-	gif_select_i2.image = "/Users/iclateman/The Castle/Nqprompt1gifs/eyegoop.gif"
+	gif_select_i2.image = "Nqprompt1gifs/eyegoop.gif"
 elif sel_i2 == 1:
-	gif_select_i2.image = "/Users/iclateman/The Castle/Nqprompt1gifs/manowar.gif"
+	gif_select_i2.image = "Nqprompt1gifs/manowar.gif"
 elif sel_i2 == 2:
-	gif_select_i2.image = "/Users/iclateman/The Castle/Nqprompt1gifs/mold.gif"
+	gif_select_i2.image = "Nqprompt1gifs/mold.gif"
 elif sel_i2 == 3:
-	gif_select_i2.image = "/Users/iclateman/The Castle/Nqprompt1gifs/whalepus.gif" #problem
+	gif_select_i2.image = "Nqprompt1gifs/whalepus.gif" #problem
 else:
-	gif_select_i2.image = "/Users/iclateman/The Castle/Nqprompt1gifs/pill.gif"
+	gif_select_i2.image = "Nqprompt1gifs/pill.gif"
 gif_select_i2.hide()
 #INTERIM TEXT OBJECTS TO BE TURNED INTO PICTURE OBJECTS
 pic_box = Box(app, layout="grid", grid = [2,2])
@@ -475,7 +475,7 @@ pic_button1 = PushButton(pic_box, grid=[0,0], width = 150, height = 150, command
 pic_button2 = PushButton(pic_box, grid=[1,1], width = 150, height = 150, command = disable2)
 pic_button3 = PushButton(pic_box, grid=[1,0], width = 150, height = 150, command = disable3)
 pic_button4 = PushButton(pic_box, grid=[4,1], width = 150, height = 150, command = disable4)
-pic_dict = {1: "/Users/iclateman/The Castle/qprompt2Y/p_img_1.png", 2: "/Users/iclateman/The Castle/qprompt2Y/p_img_1.png", 3: "/Users/iclateman/The Castle/qprompt2Y/p_img_3.jpg", 4: "/Users/iclateman/The Castle/qprompt2Y/p_img_4.png", 5: "/Users/iclateman/The Castle/qprompt2Y/p_img_5.jpg", 6: "/Users/iclateman/The Castle/qprompt2Y/p_img_6.jpg", 7: "/Users/iclateman/The Castle/qprompt2Y/p_img_7.jpg", 8: "/Users/iclateman/The Castle/qprompt2Y/p_img_8.jpg", 9: "/Users/iclateman/The Castle/qprompt2Y/p_img_9.jpg", 10: "/Users/iclateman/The Castle/qprompt2Y/p_img_10.jpg", 11: "/Users/iclateman/The Castle/qprompt2Y/p_img_11.jpg", 12: "/Users/iclateman/The Castle/qprompt2Y/p_img_12.jpg", 13: "/Users/iclateman/The Castle/qprompt2Y/p_img_13.jpg", 14: "/Users/iclateman/The Castle/qprompt2Y/p_img_14.png", 15: "/Users/iclateman/The Castle/qprompt2Y/p_img_15.jpg", 16: "/Users/iclateman/The Castle/qprompt2Y/p_img_16.jpg", 17: "/Users/iclateman/The Castle/qprompt2Y/p_img_17.jpg", 18: "/Users/iclateman/The Castle/qprompt2Y/p_img_18.jpg", 19: "/Users/iclateman/The Castle/qprompt2Y/p_img_19.jpg", 20: "/Users/iclateman/The Castle/qprompt2Y/p_img_20.jpg", 21: "/Users/iclateman/The Castle/qprompt2Y/p_img_21.png", 22: "/Users/iclateman/The Castle/qprompt2Y/p_img_22.png", 23: "/Users/iclateman/The Castle/qprompt2Y/p_img_23.png", 24: "/Users/iclateman/The Castle/qprompt2Y/p_img_24.jpg" }
+pic_dict = {1: "qprompt2Y/p_img_1.png", 2: "qprompt2Y/p_img_1.png", 3: "qprompt2Y/p_img_3.jpg", 4: "qprompt2Y/p_img_4.png", 5: "qprompt2Y/p_img_5.jpg", 6: "qprompt2Y/p_img_6.jpg", 7: "qprompt2Y/p_img_7.jpg", 8: "qprompt2Y/p_img_8.jpg", 9: "qprompt2Y/p_img_9.jpg", 10: "qprompt2Y/p_img_10.jpg", 11: "qprompt2Y/p_img_11.jpg", 12: "qprompt2Y/p_img_12.jpg", 13: "qprompt2Y/p_img_13.jpg", 14: "qprompt2Y/p_img_14.png", 15: "qprompt2Y/p_img_15.jpg", 16: "qprompt2Y/p_img_16.jpg", 17: "qprompt2Y/p_img_17.jpg", 18: "qprompt2Y/p_img_18.jpg", 19: "qprompt2Y/p_img_19.jpg", 20: "qprompt2Y/p_img_20.jpg", 21: "qprompt2Y/p_img_21.png", 22: "qprompt2Y/p_img_22.png", 23: "qprompt2Y/p_img_23.png", 24: "qprompt2Y/p_img_24.jpg" }
 a = random.sample(range(1,24), 23)
 b = random.randint(1,6)
 if b == 1:
@@ -509,17 +509,17 @@ elif b == 6:
 	pic_button3.image = pic_dict[a[22]]
 	pic_button4.image = pic_dict[24]
 pic_box.hide()
-p0_btn = PushButton(app, command=show_yes_no, image = "/Users/iclateman/The Castle/buttons/proceed1.png", grid = [0,0], width = 100, height = 50)
+p0_btn = PushButton(app, command=show_yes_no, image = "buttons/proceed1.png", grid = [0,0], width = 100, height = 50)
 p0_btn.hide()
-no_btn = PushButton(app, image="/Users/iclateman/The Castle/buttons/no1.png", width = 100, height = 100, grid = [0,1], command=second_prompt_n)
+no_btn = PushButton(app, image="buttons/no1.png", width = 100, height = 100, grid = [0,1], command=second_prompt_n)
 no_btn.hide()
-p1_btn = PushButton(app, image = "/Users/iclateman/The Castle/buttons/proceed1.png", grid = [1,3], height = 100, width = 70, command=q_prompt_2)
+p1_btn = PushButton(app, image = "buttons/proceed1.png", grid = [1,3], height = 100, width = 70, command=q_prompt_2)
 p1_btn.hide()
-yes_btn2 = PushButton(app, image="/Users/iclateman/The Castle/buttons/yes1.png", grid = [0,3], width = 100, height = 100, command=i_prompt_3_y)
+yes_btn2 = PushButton(app, image="buttons/yes1.png", grid = [0,3], width = 100, height = 100, command=i_prompt_3_y)
 yes_btn2.hide()
-no_btn2 = PushButton(app, image = "/Users/iclateman/The Castle/buttons/no1.png", grid = [0,1], width = 100, height = 100, command=i_prompt_3_n)
+no_btn2 = PushButton(app, image = "buttons/no1.png", grid = [0,1], width = 100, height = 100, command=i_prompt_3_n)
 no_btn2.hide()
-final_btn = PushButton(app, grid = [0,2], image = "/Users/iclateman/The Castle/buttons/resultbutton2.png", width = 100, height = 50)
+final_btn = PushButton(app, grid = [0,2], image = "buttons/resultbutton2.png", width = 100, height = 50)
 final_btn.hide()
 load_waf = Waffle(app, width = 1000, height = 100, pad = 6, dim = 4, grid = [3,8], color = "black")
 load_waf.hide()
